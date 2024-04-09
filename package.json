@@ -1,0 +1,27 @@
+{
+    "private": true,
+    "scripts": {
+        "build:js": "esbuild assets/js/site.js --bundle --minify --outfile=dist/js/app.js",
+        "build:css": "postcss assets/css/site.css --o dist/css/app.css",
+        "build": "npm run build:js && npm run build:css",
+        "watch:js": "esbuild assets/js/site.js --bundle --outfile=dist/js/app.js --watch",
+        "watch:css": "postcss assets/css/site.css --o dist/css/app.css --watch",
+        "watch": "npm run watch:js && npm run watch:css"
+    },
+    "devDependencies": {
+        "@tailwindcss/typography": "^0.5.9",
+        "autoprefixer": "^10.4.14",
+        "esbuild": "^0.20.2",
+        "postcss": "^8.4.23",
+        "tailwindcss": "^3.3.2"
+    },
+    "dependencies": {
+        "@alpinejs/collapse": "^3.13.3",
+        "@alpinejs/focus": "^3.13.5",
+        "@alpinejs/ui": "^3.13.7-beta.0",
+        "alpinejs": "^3.13.0",
+        "flickity": "^2.3.0",
+        "flickity-fade": "^1.0.0",
+        "lodash": "^4.17.21"
+    }
+}

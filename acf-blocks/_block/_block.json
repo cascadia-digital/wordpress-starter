@@ -1,0 +1,33 @@
+{
+	"name": "block-name",
+	"title": "Block Name",
+	"description": "Displays Block Name block.",
+	"category": "theme",
+	"apiVersion": 2,
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "blocks/block-name/index.php"
+	},
+	"supports": {
+		"anchor": true,
+		"jsx": true
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default" : "full"
+		}
+	},
+	"styles": [
+		{
+			"name": "style-one",
+			"label": "Style One",
+			"isDefault": true
+		},
+		{
+			"name": "style-two",
+			"label": "Style Two",
+			"isDefault": false
+		}
+	]
+}
