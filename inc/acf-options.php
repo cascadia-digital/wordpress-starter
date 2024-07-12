@@ -8,17 +8,23 @@ if( function_exists('acf_add_options_page') ) {
         'menu_slug'     => 'theme-settings',
     ));
 
-    // acf_add_options_sub_page(array(
-    //     'page_title'    => 'Header Settings',
-    //     'menu_title'    => 'Header',
-    //     'parent_slug'   => 'general-settings',
-    // ));
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Global Settings',
+        'menu_title'    => 'Global Settings',
+        'parent_slug'   => 'theme-settings',
+    ));
 
-    // acf_add_options_sub_page(array(
-    //     'page_title'    => 'Footer Settings',
-    //     'menu_title'    => 'Footer',
-    //     'parent_slug'   => 'general-settings',
-    // ));
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Notifications',
+        'menu_title'    => 'Notifications',
+        'parent_slug'   => 'theme-settings',
+    ));
+
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Footer Settings',
+        'menu_title'    => 'Footer',
+        'parent_slug'   => 'theme-settings',
+    ));
 
     // acf_add_options_sub_page(array(
     //     'page_title'    => 'Blog Settings',

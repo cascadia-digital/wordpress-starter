@@ -6,12 +6,13 @@
         "build": "npm run build:js && npm run build:css",
         "watch:js": "esbuild assets/js/site.js --bundle --outfile=dist/js/app.js --watch",
         "watch:css": "postcss assets/css/site.css --o dist/css/app.css --watch",
-        "watch": "npm run watch:js && npm run watch:css"
+        "watch": "npm-run-all --parallel watch:js watch:css"
     },
     "devDependencies": {
         "@tailwindcss/typography": "^0.5.9",
         "autoprefixer": "^10.4.14",
         "esbuild": "^0.20.2",
+        "npm-run-all": "^4.1.5",
         "postcss": "^8.4.23",
         "tailwindcss": "^3.3.2"
     },

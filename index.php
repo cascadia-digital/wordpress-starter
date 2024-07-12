@@ -15,7 +15,7 @@
 get_header();
 ?>
 
-	<main id="primary" class="container mt-8">
+	<main id="primary" class="container mt-12">
 
 		<?php
 		if ( have_posts() ) :
